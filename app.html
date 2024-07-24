@@ -15,14 +15,12 @@
             const argusJS = await initArgusJS();
             const response = await argusJS.get('/api/v4/metadata/distribution');
             const responseBody = await response.json()
-            console.log("response: ", responseBody)
 
 
             const conceptsUl = document.querySelector("#concepts");
             for (const distribution of responseBody.results) {
                 const li = document.createElement("li");
                 const a = document.createElement("a");
-                a.href = `http://localhost:8000/item/${distribution.id}`;
                 a.innerText = distribution.name;
                 li.appendChild(a);
                 conceptsUl.appendChild(li);
