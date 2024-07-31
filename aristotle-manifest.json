@@ -1,6 +1,6 @@
 {
     "name": "Test app",
-    "description": "This is a simple app for tesing purpose, especially for the MAST testing and the CORS error.",
+    "description": "This is a simple app for tesing purpose.",
     "manifest_version": "v1.0",
     "image": "https://sophiansl.github.io/test-app/image.png",
     "publisher": "Aristotle Metadata",
@@ -8,6 +8,8 @@
     "contributor": "some devs from Aristotle",
     "code_source": "https://github.com/SophiaNSL/test-app",
     "scope": ["metadata:read", "metadata:write"],
-    "scope_rational": "This App needs the read and write permissions."
+    "scope_rational": "This App needs the read and write permissions.",
+    "help_link": "https://help.aristotlemetadata.com/",
+    "width": "standard"
   }
   
